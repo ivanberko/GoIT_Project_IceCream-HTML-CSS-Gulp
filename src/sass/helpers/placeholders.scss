@@ -1,0 +1,45 @@
+@function sizeRem($size) {
+  @return $size / $size-content * 1rem;
+}
+
+%btn {
+  font-family: $text-font-regular;
+  padding: sizeRem(14) sizeRem(24);
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border-radius: 25px;
+}
+
+
+%title {
+  color: $main-color-white;
+  font-family: $title-font;
+  font-size: sizeRem(30);
+  margin-bottom: sizeRem(30);
+}
+
+%subtitle {
+  color: $main-color-red;
+  font-family: $title-font;
+  font-size: sizeRem(60);
+}
+
+%link {
+  display: block;
+  text-decoration: none;
+}
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+%before {
+  content: "";
+  display: inline-block;
+  margin: 0 auto;
+}

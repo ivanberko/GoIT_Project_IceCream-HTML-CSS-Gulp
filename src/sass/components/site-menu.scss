@@ -1,0 +1,26 @@
+.site-menu {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: sizeRem(42);
+    font-size: sizeRem(15);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    @extend %link;
+    color: $main-color-white;
+    font-family: $text-font-bold;
+    transition: color .3s linear;
+
+    &:hover,
+    &:focus {
+      color: $hover-color-red;
+    }
+  }
+}
