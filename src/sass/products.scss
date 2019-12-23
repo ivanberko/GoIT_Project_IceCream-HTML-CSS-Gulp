@@ -1,0 +1,119 @@
+h3,
+p {
+  margin: 0;
+}
+
+.products {
+  padding: 126px 96px;
+  min-width: 320px;
+  text-align: center;
+}
+
+.products__title {
+  margin: 0 auto;
+  margin-bottom: 146px;
+  color: $main-color-red;
+  font-family: $title-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+
+.products__span {
+  color: $text-color-pink;
+  font-family: $title-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.products-box__item {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 245px;
+  padding: 136px 36px 50px;
+  margin-bottom: 126px;
+  border-radius: 25px;
+  background-color: $main-color-pink;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--ice::before {
+    background-image: url(../images/home-pic1.png);
+    height: 216px;
+    top: -100px;
+    left: 0;
+  }
+
+  &--coffee {
+    background-color: $secondary-color-ivory;
+  }
+
+  &--coffee::before {
+    background-image: url(../images/home-pic2.png);
+    height: 237px;
+    top: -104px;
+    left: 0;
+  }
+  
+  &--milkshake {
+    background-color: $secondary-color-green;
+  }
+
+  &--milkshake::before {
+    background-image: url(../images/home-pic3.png);
+    height: 249px;
+    top: -110px;
+    left: 0;
+  }
+}
+
+.products-box__item:last-of-type {
+  margin-bottom: 0;
+  
+}
+
+.products-box__title {
+  color: $main-color-white;
+  font-family: $title-font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+
+input {
+  background-color: $main-color-white;
+}
+
+.products-box__text {
+  color: $main-color-white;
+  font-family: $text-font-regular;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-bottom: 30px;
+}
+
+.products-box__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-image: url(../images/arrow-right.png);
+  background-size: contain;
+  background-position: center;
+  padding: 0;
+  outline: none;
+  border: none;
+}
