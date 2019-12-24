@@ -1,0 +1,49 @@
+.header-inner__col-left {
+  width: 35%;
+}
+
+.title {
+  @extend %subtitle;
+  color: $main-color-white;
+  letter-spacing: 1.48px;
+  font-size: sizeRem(37);
+  padding-top: sizeRem(94);
+  padding-right: sizeRem(102);
+
+  &--bigger {
+    @extend %title;
+    display: block;
+    margin-bottom: sizeRem(30);
+  }
+}
+
+.box-btns {
+  display: inline-block;
+  margin-bottom: sizeRem(116);
+}
+
+.box-preview {
+  padding-left: sizeRem(200);
+  position: relative;
+
+  &__desc {
+    font-family: $text-font-regular;
+    letter-spacing: 0.52px;
+    color: $main-color-white;
+    font-size: sizeRem(13);
+    margin-bottom: sizeRem(22);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 188px;
+    height: 192px;
+    background-image: url(../images/slider-pic5.png);
+    background-position: center;
+    background-size: contain;
+  }
+}

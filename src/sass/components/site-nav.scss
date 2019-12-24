@@ -1,0 +1,18 @@
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: sizeRem(38) sizeRem(34) 0;
+
+  .logo {
+    padding-right: sizeRem(10);
+    width: 25%;
+  }
+
+  .row {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

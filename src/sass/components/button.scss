@@ -1,0 +1,45 @@
+.button {
+  @extend %btn;
+
+  &--buy {
+    background-color: $main-color-white;
+    color: $main-color-red;
+    padding: sizeRem(15) sizeRem(40);
+    transition: background-color 0.3s linear;
+
+    &::after {
+      @extend %after-chevron-red;
+    }
+
+    &:hover {
+      background-color: $hover-color-grey;
+    }
+  }
+
+  &--header-red {
+    font-family: $text-font-regular;
+    font-size: sizeRem(13);
+    background-color: $main-color-red;
+    color: $main-color-white;
+    margin-right: sizeRem(10);
+    padding: sizeRem(14) sizeRem(24);
+    transition: background-color 0.3s linear;
+
+    &:hover {
+      background-color: $hover-color-red;
+    }
+  }
+
+  &--header-white {
+    font-family: $text-font-regular;
+    font-size: sizeRem(13);
+    background-color: $main-color-white;
+    color: $main-color-red;
+    padding: sizeRem(14) sizeRem(24);
+    transition: background-color 0.3s linear;
+
+    &:hover {
+      background-color: $hover-color-grey;
+    }
+  }
+}
