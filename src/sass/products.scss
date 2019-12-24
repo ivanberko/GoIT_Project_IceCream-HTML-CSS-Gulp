@@ -1,12 +1,8 @@
-h3,
-p {
-  margin: 0;
-}
 
 .products {
-  padding: 126px 96px;
   min-width: 320px;
   text-align: center;
+  margin-bottom: 96px;
 }
 
 .products__title {
@@ -93,10 +89,6 @@ p {
   margin-bottom: 36px;
 }
 
-input {
-  background-color: $main-color-white;
-}
-
 .products-box__text {
   color: $main-color-white;
   font-family: $text-font-regular;
@@ -106,14 +98,9 @@ input {
   padding-bottom: 30px;
 }
 
-.products-box__button {
+.products-box__link {
   width: 40px;
   height: 40px;
-  border-radius: 50px;
-  background-image: url(../images/arrow-right.png);
-  background-size: contain;
-  background-position: center;
-  padding: 0;
-  outline: none;
-  border: none;
+  display: inline-block;
 }
+  
