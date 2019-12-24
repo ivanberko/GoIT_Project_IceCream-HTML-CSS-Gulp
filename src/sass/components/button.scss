@@ -22,6 +22,7 @@
     background-color: $main-color-red;
     color: $main-color-white;
     margin-right: sizeRem(10);
+    padding: sizeRem(14) sizeRem(24);
     transition: background-color 0.3s linear;
 
     &:hover {
@@ -34,6 +35,7 @@
     font-size: sizeRem(13);
     background-color: $main-color-white;
     color: $main-color-red;
+    padding: sizeRem(14) sizeRem(24);
     transition: background-color 0.3s linear;
 
     &:hover {

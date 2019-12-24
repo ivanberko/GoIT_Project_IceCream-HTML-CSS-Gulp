@@ -1,16 +1,17 @@
 .header-inner__col-left {
-  width: 36%;
+  width: 35%;
 }
 
 .title {
-  @extend %title;
+  @extend %subtitle;
+  color: $main-color-white;
   letter-spacing: 1.48px;
   font-size: sizeRem(37);
   padding-top: sizeRem(94);
   padding-right: sizeRem(102);
 
   &--bigger {
-    @extend %subtitle;
+    @extend %title;
     display: block;
     margin-bottom: sizeRem(30);
   }

@@ -4,7 +4,6 @@
 
 %btn {
   font-family: $text-font-bold;
-  padding: sizeRem(14) sizeRem(24);
   display: inline-block;
   border: none;
   cursor: pointer;
@@ -14,19 +13,17 @@
   font-size: sizeRem(15);
 }
 
-
-%title {
-  color: $main-color-white;
+%subtitle {
+  color: $main-color-pink;
   font-family: $title-font;
   font-weight: normal;
   line-height: 38px;
   font-size: sizeRem(30);
   margin-bottom: sizeRem(30);
   text-transform: uppercase;
-  margin: 0;
 }
 
-%subtitle {
+%title {
   color: $main-color-red;
   font-family: $title-font;
   font-size: sizeRem(60);
@@ -51,6 +48,16 @@
   margin: 0 auto;
   width: 6px;
   height: 10px;
-  background-image: url(../../images/icons/chevron-right-red.svg);
+  background-image: url(../images/icons/chevron-right-red.svg);
+  margin-left: sizeRem(12);
+}
+
+%after-chevron-white {
+  content: "";
+  display: inline-block;
+  margin: 0 auto;
+  width: 6px;
+  height: 10px;
+  background-image: url(../images/icons/chevron-right-white.svg);
   margin-left: sizeRem(12);
 }
