@@ -18,6 +18,7 @@
 
   &--header-red {
     font-family: $text-font-regular;
+    font-weight: 400;
     font-size: sizeRem(13);
     background-color: $main-color-red;
     color: $main-color-white;
@@ -32,6 +33,7 @@
 
   &--header-white {
     font-family: $text-font-regular;
+    font-weight: 400;
     font-size: sizeRem(13);
     background-color: $main-color-white;
     color: $main-color-red;

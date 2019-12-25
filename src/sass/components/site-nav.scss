@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: sizeRem(38) sizeRem(34) 0;
+  position: relative;
+  z-index: 10;
 
   .logo {
     padding-right: sizeRem(10);

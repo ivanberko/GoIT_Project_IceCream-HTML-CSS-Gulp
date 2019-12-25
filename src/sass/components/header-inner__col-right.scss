@@ -1,0 +1,48 @@
+.header-inner__col-right {
+  padding-top: sizeRem(90);
+}
+
+.counter-cafes {
+  margin-bottom: sizeRem(24);
+}
+
+// .header-inner__col-right,
+.counter-cafes,
+.counter-trucks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.counter-cafes__amount,
+.counter-trucks__amount {
+  @extend %title;
+  font-size: sizeRem(45);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -18px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: $main-color-white;
+    z-index: -1;
+  }
+}
+
+.counter-cafes__desc,
+.counter-trucks__desc {
+  color: $main-color-white;
+  font-family: $text-font-regular;
+  font-size: sizeRem(14);
+}
+
+.col-right__img {
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+}
