@@ -1,12 +1,15 @@
 .header-inner__col-right {
   padding-top: sizeRem(90);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    padding-top: sizeRem(20);
+  }
 }
 
 .counter-cafes {
-  margin-bottom: sizeRem(24);
+  margin-bottom: sizeRem(20);
 }
 
-// .header-inner__col-right,
 .counter-cafes,
 .counter-trucks {
   display: flex;
@@ -21,7 +24,7 @@
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: -18px;
@@ -31,6 +34,17 @@
     border-radius: 50%;
     background-color: $main-color-white;
     z-index: -1;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      width: 16px;
+      height: 16px;
+      right: -8px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: sizeRem(28);
+    line-height: 1;
   }
 }
 
@@ -39,10 +53,20 @@
   color: $main-color-white;
   font-family: $text-font-regular;
   font-size: sizeRem(14);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: sizeRem(8);
+  }
 }
 
 .col-right__img {
+  width: 295px;
   position: absolute;
   bottom: 0;
   right: 70px;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 167px;
+    right: 42px;
+  }
 }

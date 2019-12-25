@@ -3,7 +3,13 @@
   justify-content: space-between;
   padding-right: sizeRem(102);
   padding-left: sizeRem(80);
+  padding-bottom: sizeRem(56);
   position: relative;
   z-index: 0;
-  padding-bottom: sizeRem(56);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    padding-right: sizeRem(60);
+    padding-left: sizeRem(48);
+    padding-bottom: sizeRem(34);
+  }
 }

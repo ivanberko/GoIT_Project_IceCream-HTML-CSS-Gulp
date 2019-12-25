@@ -10,10 +10,24 @@
   height: 537px;
   background-color: $text-color-pink;
   border-radius: 50%;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 323px;
+    height: 323px;
+    left: 0;
+    bottom: 50px;
+  }
 }
 
 .col-center__img {
   position: absolute;
   bottom: 0;
   left: 650px;
+  width: 229px;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    left: 378px;
+    width: 140px;
+    height: 332px;
+  }
 }
