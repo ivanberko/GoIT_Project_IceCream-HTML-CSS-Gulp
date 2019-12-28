@@ -1,3 +1,10 @@
+.overlay {
+  background-image: url(../images/sectionbg3.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
 
 .products {
   min-width: 320px;
@@ -7,6 +14,7 @@
 
 .products-box {
   margin: 0 auto;
+  
 
   @media (min-width: 768px) {
     max-width: 688px;
@@ -15,10 +23,7 @@
   }
   @media (min-width: 1280px) {
     max-width: 1046px;
-    background-image: url(../images/sectionbg3.jpg);
-    background-size: cover;
-    width: 100%;
-    height: auto;
+    
   }
 }
 
@@ -101,6 +106,9 @@
   @media (min-width: 768px) {
     margin-bottom: sizeRem(120);
     max-width: 218px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 330px;
   }
 }
 
