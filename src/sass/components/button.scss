@@ -14,10 +14,15 @@
     &:hover {
       background-color: $hover-color-grey;
     }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      padding: sizeRem(15) sizeRem(34);
+    }
   }
 
   &--header-red {
     font-family: $text-font-regular;
+    font-weight: 400;
     font-size: sizeRem(13);
     background-color: $main-color-red;
     color: $main-color-white;
@@ -28,10 +33,23 @@
     &:hover {
       background-color: $hover-color-red;
     }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      padding: sizeRem(8) sizeRem(14);
+      font-size: sizeRem(8);
+      margin-right: sizeRem(6);
+    }
+
+    @media (max-width: 767px) {
+      padding: sizeRem(12) sizeRem(18);
+      font-size: sizeRem(9);
+      margin-right: sizeRem(10);
+    }
   }
 
   &--header-white {
     font-family: $text-font-regular;
+    font-weight: 400;
     font-size: sizeRem(13);
     background-color: $main-color-white;
     color: $main-color-red;
@@ -40,6 +58,16 @@
 
     &:hover {
       background-color: $hover-color-grey;
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      padding: sizeRem(8) sizeRem(14);
+      font-size: sizeRem(8);
+    }
+
+    @media (max-width: 767px) {
+      padding: sizeRem(12) sizeRem(18);
+      font-size: sizeRem(9);
     }
   }
 }

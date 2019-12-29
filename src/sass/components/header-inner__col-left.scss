@@ -1,5 +1,14 @@
 .header-inner__col-left {
-  width: 35%;
+  width: 36%;
+
+  @media (max-width: 767px) {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding-left: sizeRem(16);
+    padding-top: sizeRem(140);
+    padding-bottom: sizeRem(140);
+  }
 }
 
 .title {
@@ -8,18 +17,47 @@
   letter-spacing: 1.48px;
   font-size: sizeRem(37);
   padding-top: sizeRem(94);
-  padding-right: sizeRem(102);
 
   &--bigger {
     @extend %title;
     display: block;
-    margin-bottom: sizeRem(30);
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      font-size: sizeRem(36);
+    }
+
+    @media (max-width: 767px) {
+      font-size: sizeRem(45);
+      line-height: 52px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: sizeRem(24);
+    padding-top: sizeRem(20);
+    line-height: 22px;
+    margin-bottom: sizeRem(20);
+  }
+
+  @media (max-width: 767px) {
+    font-size: sizeRem(27);
+    line-height: 26px;
+    padding-top: 0;
+    margin-bottom: sizeRem(20);
   }
 }
 
 .box-btns {
   display: inline-block;
   margin-bottom: sizeRem(116);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: sizeRem(70);
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+  }
 }
 
 .box-preview {
@@ -32,10 +70,20 @@
     color: $main-color-white;
     font-size: sizeRem(13);
     margin-bottom: sizeRem(22);
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      font-size: sizeRem(8);
+      letter-spacing: 0.32px;
+      margin-bottom: sizeRem(10);
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
   &::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     bottom: -10px;
@@ -45,5 +93,30 @@
     background-image: url(../images/slider-pic5.png);
     background-position: center;
     background-size: contain;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      width: 124px;
+      height: 126px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    padding-left: sizeRem(124);
+  }
+}
+
+.box-preview__link-img {
+  width: 27px;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 18px;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
   }
 }
