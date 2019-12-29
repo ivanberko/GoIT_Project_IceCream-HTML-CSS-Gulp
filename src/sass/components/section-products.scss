@@ -1,15 +1,15 @@
 .overlay {
   background-image: url(../images/sectionbg3.jpg);
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: auto;
 }
 
 .products {
-  min-width: 320px;
+  min-width: sizeRem(320);
   text-align: center;
-  margin-bottom: 96px;
+  margin-bottom: sizeRem(96);
 }
 
 .products-box {
@@ -17,12 +17,12 @@
   
 
   @media (min-width: 768px) {
-    max-width: 688px;
+    max-width: sizeRem(688);
     display: flex;
     justify-content: space-between;
   }
   @media (min-width: 1280px) {
-    max-width: 1046px;
+    max-width: sizeRem(1046);
     
   }
 }
@@ -34,7 +34,7 @@
   font-weight: normal;
   line-height: sizeRem(52);
   text-transform: uppercase;
-  margin-bottom: sizeRem(66);
+  margin-bottom: sizeRem(146);
 
   @media (min-width: 768px) {
     font-size: sizeRem(60);
@@ -49,6 +49,7 @@
   font-weight: normal;
   line-height: sizeRem(38);
   text-transform: uppercase;
+  margin-bottom: sizeRem(30);
 
   @media (min-width: 768px) {
     font-size: sizeRem(30)
@@ -59,9 +60,9 @@
   margin: 0 auto;
   text-align: center;
   position: relative;
-  width: 245px;
-  padding: 136px 36px 50px;
-  margin-bottom: 126px;
+  width: sizeRem(245);
+  padding: sizeRem(136) sizeRem(36) sizeRem(50);
+  margin-bottom: sizeRem(126);
   border-radius: 25px;
   background-color: $main-color-pink;
 
@@ -105,10 +106,10 @@
 
   @media (min-width: 768px) {
     margin-bottom: sizeRem(120);
-    max-width: 218px;
+    max-width: sizeRem(218);
   }
   @media (min-width: 1280px) {
-    max-width: 330px;
+    max-width: sizeRem(330);
   }
 }
 
@@ -123,20 +124,20 @@
 .products-box__title {
   color: $main-color-white;
   font-family: $title-font;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 38px;
+  font-size: sizeRem(15);
+  font-weight: normal;
+  line-height: sizeRem(38);
   text-transform: uppercase;
-  margin-bottom: 36px;
+  margin-bottom: sizeRem(36);
 }
 
 .products-box__text {
   color: $main-color-white;
   font-family: $text-font-regular;
-  font-size: 13px;
+  font-size: sizeRem(13);
   font-weight: 700;
-  line-height: 20px;
-  padding-bottom: 30px;
+  line-height: sizeRem(20);
+  padding-bottom: sizeRem(30);
 }
 
 .products-box__link {
@@ -150,7 +151,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: sizeRem(32);
 }
 
 .products-box__decor-dot {
