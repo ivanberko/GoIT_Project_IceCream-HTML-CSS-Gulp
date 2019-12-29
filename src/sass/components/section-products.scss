@@ -145,7 +145,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1279px) {
     max-width: sizeRem(218);
     padding: sizeRem(164) sizeRem(24) sizeRem(50);
   }
