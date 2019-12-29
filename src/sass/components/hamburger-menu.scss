@@ -87,13 +87,9 @@
   }
 
   #menu__toggle:checked ~ .menu__btn {
+    position: fixed;
     top: 24px;
     right: 24px;
-
-    @media (max-width: 767px) {
-      top: 0;
-      right: 0;
-    }
   }
 
   #menu__toggle:checked ~ .menu__btn > span {
@@ -110,7 +106,7 @@
     transform: rotate(90deg);
   }
 
-  #menu__toggle:checked ~ .owerlay {
+  #menu__toggle:checked ~ .hamburger-menu__overlay {
     position: fixed;
     left: 0;
     top: 0;
@@ -119,7 +115,7 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  #menu__toggle:checked ~ .owerlay > .hamburger-menu__container {
+  #menu__toggle:checked ~ .hamburger-menu__overlay > .hamburger-menu__container {
     visibility: visible;
     right: 0;
   }

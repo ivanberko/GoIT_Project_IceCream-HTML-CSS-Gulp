@@ -20,7 +20,7 @@
     }
   }
 
-  &--header-red {
+  &--red {
     font-family: $text-font-regular;
     font-weight: 400;
     font-size: sizeRem(13);
@@ -47,7 +47,7 @@
     }
   }
 
-  &--header-white {
+  &--white {
     font-family: $text-font-regular;
     font-weight: 400;
     font-size: sizeRem(13);
@@ -68,6 +68,38 @@
     @media (max-width: 767px) {
       padding: sizeRem(12) sizeRem(18);
       font-size: sizeRem(9);
+    }
+  }
+
+  &--red--locations {
+    padding: sizeRem(18) sizeRem(36);
+    font-size: sizeRem(15);
+    font-weight: 700;
+
+    &::after {
+      @extend %after-chevron-white;
+      margin-left: sizeRem(18);
+    }
+
+    @media (max-width: 767px) {
+      font-size: sizeRem(14);
+      margin-right: 0;
+      margin-bottom: sizeRem(14);
+    }
+  }
+
+  &--white--locations {
+    padding: sizeRem(18) sizeRem(42);
+    font-size: sizeRem(15);
+    font-weight: 700;
+
+    &::after {
+      @extend %after-chevron-red;
+      margin-left: sizeRem(18);
+    }
+
+    @media (max-width: 767px) {
+      font-size: sizeRem(14);
     }
   }
 }

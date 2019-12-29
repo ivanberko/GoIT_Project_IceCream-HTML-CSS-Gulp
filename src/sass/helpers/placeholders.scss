@@ -50,8 +50,9 @@
   display: inline-block;
   margin: 0 auto;
   width: 6px;
-  height: 10px;
+  height: 8px;
   background-image: url(../images/icons/chevron-right-red.svg);
+  background-repeat: no-repeat;
   margin-left: sizeRem(12);
 }
 
@@ -60,7 +61,8 @@
   display: inline-block;
   margin: 0 auto;
   width: 6px;
-  height: 10px;
+  height: 8px;
   background-image: url(../images/icons/chevron-right-white.svg);
+  background-repeat: no-repeat;
   margin-left: sizeRem(12);
 }
