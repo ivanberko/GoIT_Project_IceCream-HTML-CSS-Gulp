@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: sizeRem(120);
+
+  @media (max-width: 767px) {
+    margin-bottom: sizeRem(90);
+  }
+}
+
+.pagination__dot input[type='radio'] {
+  display: none;
+}
+
+.pagination__dot label {
+  position: relative;
+  cursor: pointer;
+}
+
+.pagination__dot:not(:last-child) label {
+  margin-right: sizeRem(16);
+}
+
+.pagination__dot label:before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.pagination__dot input[type='radio']:checked + label:before {
+  width: 16px;
+  height: 13px;
+  border-radius: 0;
+  background: url(../../images/icons/home.svg) center no-repeat;
+  background-size: contain;
+}

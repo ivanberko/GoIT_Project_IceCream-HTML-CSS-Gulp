@@ -1,0 +1,98 @@
+.testimonials-slider {
+  padding: 0 sizeRem(176);
+  text-align: center;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    padding: 0 sizeRem(80);
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 sizeRem(34);
+  }
+
+  &__foto {
+    margin-bottom: sizeRem(20);
+  }
+
+  &__img {
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  &__text,
+  &__author {
+    font-family: $text-font-medium;
+    font-weight: 700;
+    font-size: sizeRem(17);
+    line-height: 31px;
+    letter-spacing: 0.17px;
+  }
+
+  &__text {
+    background-color: #fafafa;
+    padding: sizeRem(54) sizeRem(98) sizeRem(30);
+    margin-bottom: sizeRem(22);
+    position: relative;
+    z-index: 1;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #e1e1e1;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 54px;
+      height: 41px;
+      background-image: url(../../images/blockquote.png);
+      position: absolute;
+      z-index: -1;
+      top: 40px;
+      left: 54px;
+
+      @media (min-width: 768px) and (max-width: 1279px) {
+        top: 40px;
+        left: 36px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      font-size: sizeRem(15);
+      padding: sizeRem(54) sizeRem(76) sizeRem(34);
+    }
+
+    @media (max-width: 767px) {
+      font-size: sizeRem(13);
+      padding: sizeRem(52) sizeRem(46) sizeRem(32) sizeRem(80);
+    }
+  }
+
+  &__author {
+    font-size: sizeRem(20);
+    margin-bottom: sizeRem(34);
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      font-size: sizeRem(17);
+    }
+
+    @media (max-width: 767px) {
+      font-size: sizeRem(13);
+    }
+  }
+
+  &__decor-dot-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: sizeRem(22);
+  }
+
+  &__decor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: $main-color-red;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: sizeRem(10);
+    }
+  }
+}
