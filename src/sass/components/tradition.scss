@@ -4,17 +4,18 @@
 }
 
 .tradition-wrapper {
-    width: 320px;
+    min-width: 320px;
+    width: 100%;
     margin: 0 auto;
-    
-    &__main-title{
+    padding-bottom: 111px;
+    &__main-title {
         @extend %subtitle;
         padding-top: sizeRem(129);
         display: block;
         text-align: center;
         font-size: 18px;
     }
-    &__sub-title{
+    &__sub-title {
         @extend %title;
         padding-top: sizeRem(16);
         display: block;
@@ -22,10 +23,11 @@
         font-size: 36px;
         line-height: sizeRem(36);
     }
-    &__cow-picture {
-        margin: 0 auto;
+    &__cow-container-picture {
+        display: block;
         margin-top: sizeRem(62);
         & img {
+            margin: 0 auto;
             width: 247px;
             height: 204px;
         }
@@ -47,7 +49,7 @@
             padding: sizeRem(36) sizeRem(39) sizeRem(0) sizeRem(61);
         }
     }
-    &__button{
+    &__button {
         @extend %btn;
         margin-left: sizeRem(56);
         margin-top: sizeRem(40);

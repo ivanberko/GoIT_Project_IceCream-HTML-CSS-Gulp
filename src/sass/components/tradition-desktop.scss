@@ -1,32 +1,33 @@
-@media screen and (min-width:768px) {
+@media screen and (min-width:1220px) {
     .tradition-wrapper {
-        max-width: 800px;
+        max-width: 1220px;
         width: 100%;
         margin: 0 auto;
         padding-bottom: sizeRem(142);
+        position: relative;
         &__main-title {
-            font-size: 26px;
+            font-size: 30px;
         }
         &__sub-title {
-            font-size: 51px;
+            font-size: 60px;
             margin-bottom: 0;
         }
         &__title {
             box-sizing: content-box;
             padding: sizeRem(142) sizeRem(47) 0 sizeRem(48);
-            max-width: sizeRem(300);
-            font-size: 14px;
+            max-width: sizeRem(460);
+            font-size: 17px;
         }
         &__text {
             box-sizing: content-box;
             padding: sizeRem(39) sizeRem(47) 0 sizeRem(48);
-            max-width: sizeRem(300);
-            font-size: 14px;
+            max-width: sizeRem(460);
+            font-size: 17px;
             &:nth-last-child(2n) {
                 box-sizing: content-box;
                 margin-right: 0;
-                padding: sizeRem(20) sizeRem(47) 0 sizeRem(48);
-                font-size: 14px;
+                padding: sizeRem(42) sizeRem(47) 0 sizeRem(48);
+                font-size: 17px;
             }
         }
         &-icecream {
@@ -34,24 +35,32 @@
             &__type img{
                 padding-top: sizeRem(63);
             }
+            &__type h2 {
+                padding-top: sizeRem(51);
+                font-size: 60px;
+            }
+            &__type p {
+                padding-top: sizeRem(31);
+                font-size: 17px;
+            }
         }
         &__button {
-            margin-top: 0;
-            margin-left: sizeRem(456);
+            position: absolute;
+            top: sizeRem(664);
+            left: sizeRem(252);
         }
         &__cow-container {
             background-image: url(../../images/sectionbg1.png);
             background-repeat: no-repeat;
-            background-position-y: 190px;
             background-size: contain;
-            padding-bottom: sizeRem(60);
+            padding-bottom: sizeRem(90);
             &-picture {
-                margin-left: sizeRem(36);
+                margin-left: sizeRem(118);
                 margin-top: sizeRem(92);
                 & img {
                     margin: 0 auto;
-                    width: 340px;
-                    height: 281px;
+                    width: 511px;
+                    height: 422px;
                 }
             }
         }
