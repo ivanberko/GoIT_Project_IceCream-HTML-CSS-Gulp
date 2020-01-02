@@ -16,14 +16,12 @@
 @import 'components/header-inner.scss';
 @import 'components/header-inner__col-left.scss';
 @import 'components/header-inner__col-center.scss';
-<<<<<<< HEAD
 
 // TRADITION BLOCK ----------------------
 
 @import 'components/tradition.scss';
 @import 'components/tradition-tablet.scss';
 @import 'components/tradition-desktop.scss';
-=======
 @import 'components/header-inner__col-right.scss';
 
 // SECTION PRODUCTS............................
@@ -35,4 +33,7 @@
 
 // SECTION LOCATIONS............................
 @import 'components/locations.scss';
->>>>>>> 216162ca47bda6e5fcdcebe1c921ee89890d2d7e
+
+//  FOOTER...........................................
+@import 'components/footer.scss';
+@import 'components/footer-tablet.scss';

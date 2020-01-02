@@ -1,9 +1,9 @@
-@media screen and (min-width:1220px) {
+@media screen and (min-width:1280px) {
     .tradition-wrapper {
         max-width: 1220px;
         width: 100%;
         margin: 0 auto;
-        padding-bottom: sizeRem(142);
+        padding-bottom: sizeRem(342);
         position: relative;
         &__main-title {
             font-size: 30px;
@@ -67,6 +67,12 @@
         &__cow-container {
             display: flex;
             justify-content: space-between;
+        }
+        &__pictures {
+            position: absolute;
+            width: 1281px;
+            height: 431px;
+            bottom: -260px;
         }
     }
 }

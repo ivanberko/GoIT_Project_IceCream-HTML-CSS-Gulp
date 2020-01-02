@@ -3,6 +3,7 @@
         max-width: 800px;
         width: 100%;
         margin: 0 auto;
+        position: relative;
         padding-bottom: sizeRem(142);
         &__main-title {
             font-size: 26px;
@@ -58,6 +59,12 @@
         &__cow-container {
             display: flex;
             justify-content: space-between;
+        }
+        &__pictures {
+            position: absolute;
+            width: 784px;
+            height: 263px;
+            bottom: -158px;
         }
     }
 }

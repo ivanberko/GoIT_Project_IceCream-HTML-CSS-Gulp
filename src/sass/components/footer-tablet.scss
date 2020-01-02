@@ -1,0 +1,27 @@
+@media screen and (min-width:768px) {
+    .footer {
+        width: 768px;
+        
+        &-titles {
+            display: inline-block;
+            width: 45%;
+            &__main-title {
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 33px;
+            }
+            &__sub-title {
+                display: block;
+                @extend %title;
+                font-size: 36px;
+                line-height: 32px;
+                padding-top: 28px;
+            }
+        }
+        &-contacts {
+            display: inline-block;
+            width: 45%;
+        }
+        
+    }
+}

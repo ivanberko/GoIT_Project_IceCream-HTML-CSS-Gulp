@@ -1,0 +1,43 @@
+.footer {
+    width: 320px;
+    margin: 0 auto;
+    
+    &-titles__main-title {
+        padding-right: 33px;
+        display: block;
+        @extend %subtitle;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &__sub-title {
+        padding-right: 33px;
+        display: block;
+        @extend %title;
+        font-size: 36px;
+        line-height: 32px;
+    }
+
+    &-contacts__contact-number {
+        font-family: $text-font-bold;
+        padding-bottom: 46px;
+        text-align: center;
+        & a {
+            font-family: $text-font-bold;
+            text-decoration: none;
+            color: red;
+        }
+    }
+    &-copyright__text {
+        text-align: center;
+        color: #b3a0a4;
+        font-family: $text-font-regular;
+        padding-bottom: 26px;
+        &::before {
+            padding-bottom: 26px;
+            display: block;
+            width: 100%;
+            content: "";
+            border-top: 2px solid #b3a0a4;
+        }
+    }
+}

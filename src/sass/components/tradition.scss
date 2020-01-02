@@ -4,10 +4,9 @@
 }
 
 .tradition-wrapper {
-    min-width: 320px;
-    width: 100%;
+    width: 320px;
     margin: 0 auto;
-    padding-bottom: 111px;
+    position: relative;
     &__main-title {
         @extend %subtitle;
         padding-top: sizeRem(129);
@@ -77,5 +76,11 @@
         font-size: 13px;
         font-family: $text-font-bold;
         color: $text-color-black;
+    }
+    &__pictures {
+        position: absolute;
+        width: 327px;
+        height: 110px;
+        bottom: -66px;
     }
 }
