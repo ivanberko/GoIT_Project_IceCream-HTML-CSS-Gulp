@@ -1,20 +1,17 @@
-@media screen and (min-width:768px) {
+@media screen and (min-width:1280px) {
     .footer {
-        width: 768px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        width: 1280px;
         &-titles {
             
             width: 45%;
             &__main-title {
-                font-size: 26px;
+                font-size: 30px;
                 font-weight: 400;
                 line-height: 33px;
             }
             &__sub-title {
                 padding-top: 30px;
-                font-size: 51px;
+                font-size: 60px;
                 line-height: 49px;
             }
         }
@@ -22,6 +19,5 @@
             padding-top: 100px;
             width: 45%;
         }
-        
     }
 }

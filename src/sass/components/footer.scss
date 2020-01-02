@@ -9,7 +9,7 @@
         font-size: 18px;
         line-height: 20px;
     }
-    &__sub-title {
+    &-titles__sub-title {
         padding-right: 33px;
         display: block;
         @extend %title;
@@ -27,17 +27,21 @@
             color: red;
         }
     }
-    &-copyright__text {
-        text-align: center;
-        color: #b3a0a4;
-        font-family: $text-font-regular;
-        padding-bottom: 26px;
-        &::before {
+    &-copyright {
+        width: 100%;
+        &__text {
+            text-align: center;
+            color: #b3a0a4;
+            font-family: $text-font-regular;
             padding-bottom: 26px;
-            display: block;
-            width: 100%;
-            content: "";
-            border-top: 2px solid #b3a0a4;
+            &::before {
+                padding-bottom: 26px;
+                display: block;
+                width: 100%;
+                content: "";
+                border-top: 2px solid #b3a0a4;
+            }
         }
     }
+   
 }
