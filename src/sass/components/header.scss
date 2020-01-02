@@ -1,4 +1,8 @@
 .header {
   background-color: $main-color-pink;
-  margin-bottom: sizeRem(132);
+  margin-bottom: sizeRem(130);
+
+  @media (max-width: 767px) {
+    overflow: hidden;
+  }
 }

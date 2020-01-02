@@ -1,0 +1,220 @@
+.overlay {
+  background-image: url(../images/sectionbg3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+
+  .wrapper {
+    @media (max-width: 767px) {
+      padding: 0 sizeRem(38);
+    }
+  }
+}
+
+.products {
+  min-width: sizeRem(320);
+  text-align: center;
+  margin-bottom: sizeRem(120);
+
+  @media (max-width: 767px) {
+    margin-bottom: sizeRem(96);
+  }
+}
+
+.products-box {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+
+.products__title {
+  @extend %title;
+  margin-bottom: sizeRem(268);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: sizeRem(160);
+  }
+
+  @media (max-width: 767px) {
+    font-size: sizeRem(36);
+    line-height: 1;
+    margin-bottom: sizeRem(146);
+  }
+}
+
+.products__span {
+  display: block;
+  @extend %subtitle;
+
+  @media (min-width: 768px) {
+    font-size: sizeRem(30);
+  }
+
+  @media (max-width: 767px) {
+    font-size: sizeRem(18);
+    margin-bottom: sizeRem(22);
+    line-height: 1;
+  }
+}
+
+.products-box__item {
+  text-align: center;
+  position: relative;
+  width: 330px;
+  padding: sizeRem(172) sizeRem(50) sizeRem(50);
+  border-radius: 25px;
+  background-color: $main-color-pink;
+
+  &:not(:last-child) {
+    margin-right: sizeRem(28);
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      margin-right: sizeRem(20);
+    }
+
+    @media (max-width: 767px) {
+      margin-right: 0;
+      margin-bottom: sizeRem(128);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--ice::before {
+    background-image: url(../images/home-pic1.png);
+    min-height: 290px;
+    bottom: 415px;
+    left: 0;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      bottom: 362px;
+    }
+
+    @media (max-width: 767px) {
+      bottom: 356px;
+    }
+  }
+
+  &--coffee {
+    background-color: $secondary-color-ivory;
+  }
+
+  &--coffee::before {
+    background-image: url(../images/home-pic2.png);
+    min-height: 290px;
+    bottom: 415px;
+    left: 0;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      bottom: 362px;
+    }
+
+    @media (max-width: 767px) {
+      bottom: 356px;
+    }
+  }
+
+  &--milkshake {
+    background-color: $secondary-color-green;
+  }
+
+  &--milkshake::before {
+    background-image: url(../images/home-pic3.png);
+    min-height: 290px;
+    bottom: 415px;
+    left: 0;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      bottom: 362px;
+    }
+
+    @media (max-width: 767px) {
+      bottom: 356px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    max-width: sizeRem(218);
+    padding: sizeRem(164) sizeRem(24) sizeRem(50);
+  }
+
+  @media (min-width: 1280px) {
+    max-width: sizeRem(330);
+  }
+
+  @media (max-width: 767px) {
+    padding: sizeRem(164) sizeRem(38) sizeRem(50);
+  }
+}
+
+.products-box__title {
+  color: $main-color-white;
+  font-family: $title-font;
+  font-size: sizeRem(25);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: sizeRem(40);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: sizeRem(21);
+    margin-bottom: sizeRem(36);
+  }
+
+  @media (max-width: 767px) {
+    font-size: sizeRem(15);
+  }
+}
+
+.products-box__text {
+  color: $main-color-white;
+  font-family: $text-font-regular;
+  font-size: sizeRem(16);
+  font-weight: 700;
+  line-height: sizeRem(28);
+  letter-spacing: 0.64px;
+  padding-bottom: sizeRem(62);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: sizeRem(14);
+    line-height: sizeRem(24);
+    padding-bottom: sizeRem(50);
+  }
+
+  @media (max-width: 767px) {
+    font-size: sizeRem(13);
+    line-height: sizeRem(20);
+  }
+}
+
+.products-box__link {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.products-box__decor-dot-box {
+  width: 26px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: sizeRem(32);
+}
+
+.products-box__decor-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  background-color: $main-color-white;
+}

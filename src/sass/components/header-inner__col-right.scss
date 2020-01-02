@@ -1,0 +1,76 @@
+.header-inner__col-right {
+  padding-top: sizeRem(90);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    padding-top: sizeRem(20);
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.counter-cafes {
+  margin-bottom: sizeRem(20);
+}
+
+.counter-cafes,
+.counter-trucks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.counter-cafes__amount,
+.counter-trucks__amount {
+  @extend %title;
+  font-size: sizeRem(45);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: $main-color-white;
+    z-index: -1;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      width: 16px;
+      height: 16px;
+      right: -8px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: sizeRem(28);
+    line-height: 1;
+  }
+}
+
+.counter-cafes__desc,
+.counter-trucks__desc {
+  color: $main-color-white;
+  font-family: $text-font-regular;
+  font-size: sizeRem(14);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: sizeRem(8);
+  }
+}
+
+.col-right__img {
+  width: 295px;
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 167px;
+    right: 42px;
+  }
+}
