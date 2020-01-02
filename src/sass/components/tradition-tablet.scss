@@ -1,0 +1,11 @@
+@media (min-width:768px) {
+    &__cow-picture {
+        margin-left: sizeRem(36);
+        margin-top: sizeRem(92);
+        display: inline-block;
+        & img {
+            width: 340px;
+            height: 281px;
+        }
+    }
+}
