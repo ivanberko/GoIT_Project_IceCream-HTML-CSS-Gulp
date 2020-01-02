@@ -5,18 +5,34 @@
 @import 'normalize.scss';
 @import 'base.scss';
 
+
 // HEADER -------------------------------
 
 @import 'components/header.scss';
 @import 'components/site-nav.scss';
+@import 'components/hamburger-menu.scss';
 @import 'components/site-menu.scss';
 @import 'components/button.scss';
 @import 'components/header-inner.scss';
 @import 'components/header-inner__col-left.scss';
 @import 'components/header-inner__col-center.scss';
+<<<<<<< HEAD
 
 // TRADITION BLOCK ----------------------
 
 @import 'components/tradition.scss';
 @import 'components/tradition-tablet.scss';
 @import 'components/tradition-desktop.scss';
+=======
+@import 'components/header-inner__col-right.scss';
+
+// SECTION PRODUCTS............................
+@import 'components/section-products.scss';
+
+// SECTION testimonials............................
+@import 'components/testimonials.scss';
+@import 'components/pagination.scss';
+
+// SECTION LOCATIONS............................
+@import 'components/locations.scss';
+>>>>>>> 216162ca47bda6e5fcdcebe1c921ee89890d2d7e
