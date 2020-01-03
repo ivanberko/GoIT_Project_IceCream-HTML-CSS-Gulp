@@ -1,0 +1,86 @@
+.wrapper-fluid {
+    width: 100%;
+    background-color: #fff5f7;
+}
+
+.tradition-wrapper {
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+    &__main-title {
+        @extend %subtitle;
+        padding-top: sizeRem(129);
+        display: block;
+        text-align: center;
+        font-size: 18px;
+    }
+    &__sub-title {
+        @extend %title;
+        padding-top: sizeRem(16);
+        display: block;
+        text-align: center;
+        font-size: 36px;
+        line-height: sizeRem(36);
+    }
+    &__cow-container-picture {
+        display: block;
+        margin-top: sizeRem(62);
+        & img {
+            margin: 0 auto;
+            width: 247px;
+            height: 204px;
+        }
+    }
+    &__title {
+        padding: sizeRem(93) sizeRem(39) sizeRem(0) sizeRem(61);
+        font-family: $text-font-bold;
+        line-height: sizeRem(19);
+        font-size: 13px;
+        color: $text-color-black;
+    }
+    &__text {
+        padding: sizeRem(21) sizeRem(39) sizeRem(0) sizeRem(61);
+        font-family: $text-font-medium;
+        line-height: sizeRem(19);
+        font-size: 13px;
+        color: $text-color-grey;
+        &:nth-last-child(2n) {
+            padding: sizeRem(36) sizeRem(39) sizeRem(0) sizeRem(61);
+        }
+    }
+    &__button {
+        @extend %btn;
+        margin-left: sizeRem(56);
+        margin-top: sizeRem(40);
+        background: white;
+        padding: sizeRem(14) sizeRem(54) sizeRem(14) sizeRem(31);
+        color: $main-color-red;
+        &::after {
+            @extend %after-chevron-red;
+        }
+    }
+    &-icecream__type img {
+        padding-top: sizeRem(40);
+        padding-left: sizeRem(33);
+    }
+    &-icecream__type h2 {
+        @extend %title;
+        padding-top: sizeRem(26);
+        padding-left: sizeRem(33);
+        font-size: 36px;
+    }
+    &-icecream__type p {
+        padding-top: sizeRem(23);
+        padding-left: sizeRem(33);
+        padding-right: sizeRem(76);
+        font-size: 13px;
+        font-family: $text-font-bold;
+        color: $text-color-black;
+    }
+    &__pictures {
+        position: absolute;
+        width: 327px;
+        height: 110px;
+        bottom: -66px;
+    }
+}
