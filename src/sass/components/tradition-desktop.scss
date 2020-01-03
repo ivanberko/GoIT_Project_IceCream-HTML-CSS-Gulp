@@ -1,0 +1,78 @@
+@media screen and (min-width:1280px) {
+    .tradition-wrapper {
+        max-width: 1220px;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: sizeRem(342);
+        position: relative;
+        &__main-title {
+            font-size: 30px;
+        }
+        &__sub-title {
+            font-size: 60px;
+            margin-bottom: 0;
+        }
+        &__title {
+            box-sizing: content-box;
+            padding: sizeRem(142) sizeRem(47) 0 sizeRem(48);
+            max-width: sizeRem(460);
+            font-size: 17px;
+        }
+        &__text {
+            box-sizing: content-box;
+            padding: sizeRem(39) sizeRem(47) 0 sizeRem(48);
+            max-width: sizeRem(460);
+            font-size: 17px;
+            &:nth-last-child(2n) {
+                box-sizing: content-box;
+                margin-right: 0;
+                padding: sizeRem(42) sizeRem(47) 0 sizeRem(48);
+                font-size: 17px;
+            }
+        }
+        &-icecream {
+            display: flex;
+            &__type img{
+                padding-top: sizeRem(63);
+            }
+            &__type h2 {
+                padding-top: sizeRem(51);
+                font-size: 60px;
+            }
+            &__type p {
+                padding-top: sizeRem(31);
+                font-size: 17px;
+            }
+        }
+        &__button {
+            position: absolute;
+            top: sizeRem(664);
+            left: sizeRem(252);
+        }
+        &__cow-container {
+            background-image: url(../../images/sectionbg1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-bottom: sizeRem(90);
+            &-picture {
+                margin-left: sizeRem(118);
+                margin-top: sizeRem(92);
+                & img {
+                    margin: 0 auto;
+                    width: 511px;
+                    height: 422px;
+                }
+            }
+        }
+        &__cow-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__pictures {
+            position: absolute;
+            width: 1281px;
+            height: 431px;
+            bottom: -260px;
+        }
+    }
+}
