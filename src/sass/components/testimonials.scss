@@ -2,16 +2,8 @@
   padding: 0 sizeRem(176);
   text-align: center;
 
-  .testimonials-slider__img {
-    margin-top: 360px;
-  }
-
   @media (min-width: 768px) and (max-width: 1279px) {
     padding: 0 sizeRem(80);
-
-    .testimonials-slider__img {
-      margin-top: 230px;
-    }
   }
 
   @media (max-width: 767px) {
@@ -91,10 +83,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: sizeRem(22);
-  }
-
-  &__img {
-    margin-top: 130px;
   }
 
   &__decor-dot {

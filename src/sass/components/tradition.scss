@@ -1,86 +1,120 @@
 .wrapper-fluid {
-    width: 100%;
-    background-color: #fff5f7;
+  width: 100%;
+  background-color: #fff5f7;
+  margin-bottom: sizeRem(80);
 }
 
 .tradition-wrapper {
-    width: 320px;
-    margin: 0 auto;
-    position: relative;
-    &__main-title {
-        @extend %subtitle;
-        padding-top: sizeRem(129);
-        display: block;
-        text-align: center;
-        font-size: 18px;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: sizeRem(110);
+
+  &__main-title {
+    @extend %subtitle;
+    padding-top: sizeRem(129);
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: sizeRem(62);
+  }
+
+  &__sub-title {
+    @extend %title;
+    padding-top: sizeRem(16);
+    display: block;
+    font-size: 36px;
+    line-height: sizeRem(36);
+  }
+
+  &__cow-container-picture {
+    display: block;
+    margin-bottom: sizeRem(92);
+
+    & img {
+      margin: 0 auto;
+      width: 247px;
+      height: auto;
     }
-    &__sub-title {
+  }
+
+  &__cow-container-information {
+    padding-right: sizeRem(32);
+    padding-left: sizeRem(56);
+    margin-bottom: sizeRem(40);
+  }
+
+  &__title {
+    font-family: $text-font-bold;
+    line-height: sizeRem(19);
+    font-size: 13px;
+    color: $text-color-black;
+    margin-bottom: sizeRem(36);
+  }
+
+  &__text {
+    font-family: $text-font-regular;
+    line-height: sizeRem(19);
+    font-size: sizeRem(13);
+    letter-spacing: 0.13px;
+    color: $text-color-grey;
+    margin-bottom: sizeRem(20);
+    font-weight: 400;
+
+    &:nth-last-child(2n) {
+      margin-bottom: sizeRem(40);
+    }
+  }
+
+  &__button {
+    @extend %btn;
+    background: $main-color-white;
+    padding: sizeRem(14) sizeRem(54) sizeRem(14) sizeRem(31);
+    color: $main-color-red;
+
+    &::after {
+      @extend %after-chevron-red;
+    }
+
+    &:hover {
+      background-color: $hover-color-grey;
+    }
+  }
+
+  &-icecream {
+    padding-left: sizeRem(34);
+    padding-right: sizeRem(80);
+
+    &__type {
+      margin-bottom: sizeRem(40);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & img {
+        margin-bottom: sizeRem(12);
+      }
+
+      & h2 {
         @extend %title;
-        padding-top: sizeRem(16);
-        display: block;
-        text-align: center;
         font-size: 36px;
-        line-height: sizeRem(36);
-    }
-    &__cow-container-picture {
-        display: block;
-        margin-top: sizeRem(62);
-        & img {
-            margin: 0 auto;
-            width: 247px;
-            height: 204px;
-        }
-    }
-    &__title {
-        padding: sizeRem(93) sizeRem(39) sizeRem(0) sizeRem(61);
+      }
+
+      & p {
+        font-size: sizeRem(13);
         font-family: $text-font-bold;
-        line-height: sizeRem(19);
-        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.13px;
+        line-height: 19px;
         color: $text-color-black;
+      }
     }
-    &__text {
-        padding: sizeRem(21) sizeRem(39) sizeRem(0) sizeRem(61);
-        font-family: $text-font-medium;
-        line-height: sizeRem(19);
-        font-size: 13px;
-        color: $text-color-grey;
-        &:nth-last-child(2n) {
-            padding: sizeRem(36) sizeRem(39) sizeRem(0) sizeRem(61);
-        }
-    }
-    &__button {
-        @extend %btn;
-        margin-left: sizeRem(56);
-        margin-top: sizeRem(40);
-        background: white;
-        padding: sizeRem(14) sizeRem(54) sizeRem(14) sizeRem(31);
-        color: $main-color-red;
-        &::after {
-            @extend %after-chevron-red;
-        }
-    }
-    &-icecream__type img {
-        padding-top: sizeRem(40);
-        padding-left: sizeRem(33);
-    }
-    &-icecream__type h2 {
-        @extend %title;
-        padding-top: sizeRem(26);
-        padding-left: sizeRem(33);
-        font-size: 36px;
-    }
-    &-icecream__type p {
-        padding-top: sizeRem(23);
-        padding-left: sizeRem(33);
-        padding-right: sizeRem(76);
-        font-size: 13px;
-        font-family: $text-font-bold;
-        color: $text-color-black;
-    }
-    &__pictures {
-        position: absolute;
-        width: 327px;
-        height: 110px;
-        bottom: -66px;
-    }
+  }
+
+//   &__pictures {
+//     position: absolute;
+//     width: 327px;
+//     height: 110px;
+//     bottom: -66px;
+//   }
 }
