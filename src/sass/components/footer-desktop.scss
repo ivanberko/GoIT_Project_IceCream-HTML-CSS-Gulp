@@ -1,6 +1,7 @@
 @media screen and (min-width:1280px) {
     .footer {
         width: 1280px;
+        position: relative;
         &-titles {
             
             width: 45%;
@@ -16,8 +17,16 @@
             }
         }
         &-contacts {
-            padding-top: 100px;
+            position: absolute;
+            top: sizeRem(90);
+            left: sizeRem(870);
             width: 45%;
+            &__contact-number {
+                font-size: 18px;
+                & a {
+                    font-size: 18px;
+                }
+            }
         }
     }
 }

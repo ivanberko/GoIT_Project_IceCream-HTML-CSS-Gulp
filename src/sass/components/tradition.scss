@@ -58,6 +58,10 @@
         &::after {
             @extend %after-chevron-red;
         }
+        &:hover {
+            background-color: $hover-color-grey;
+            transition: background-color 0.3s linear;
+        }
     }
     &-icecream__type img {
         padding-top: sizeRem(40);

@@ -4,8 +4,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        position: relative;
         &-titles {
-            
             width: 45%;
             &__main-title {
                 font-size: 26px;
@@ -18,8 +18,11 @@
                 line-height: 49px;
             }
         }
+
         &-contacts {
-            padding-top: 100px;
+            position: absolute;
+            top: sizeRem(83);
+            left: sizeRem(452);
             width: 45%;
         }
         

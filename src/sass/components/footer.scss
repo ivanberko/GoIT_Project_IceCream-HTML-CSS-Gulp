@@ -3,26 +3,75 @@
     margin: 0 auto;
     
     &-titles__main-title {
-        padding-right: 33px;
+        padding-left: 33px;
         display: block;
         @extend %subtitle;
         font-size: 18px;
-        line-height: 20px;
+        margin-bottom: sizeRem(40);
     }
     &-titles__sub-title {
-        padding-right: 33px;
         display: block;
         @extend %title;
         font-size: 36px;
-        line-height: 32px;
+    }
+
+    &__socila-links {
+        width: 320px;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: sizeRem(50);
+        &-facebook {
+            margin-left: sizeRem(26);
+            margin-right: sizeRem(41);
+            background: #ffa5ba;
+            border: 6px solid #ffa5ba;
+            border-radius: 50%;
+            fill: white;
+            width: 30px;
+            height: 30px;
+            &:hover {
+                background: #c7133e;
+                border: 6px solid #c7133e;
+                cursor: pointer;            
+            }
+        }
+        &-github {
+            background: #ffa5ba;
+            border: 6px solid #ffa5ba;
+            border-radius: 50%;
+            fill: white;
+            width: 30px;
+            height: 30px;
+            &:hover {
+                background: #c7133e;
+                border: 6px solid #c7133e;
+                cursor: pointer;            
+            }
+        }
+        &-telegram {
+            margin-left: sizeRem(26);
+            background: #ffa5ba;
+            border: 6px solid #ffa5ba;
+            border-radius: 50%;
+            fill: white;
+            width: 30px;
+            height: 30px;
+            &:hover {
+                background: #c7133e;
+                border: 6px solid #c7133e;
+                cursor: pointer;            
+            }
+        }
     }
 
     &-contacts__contact-number {
         font-family: $text-font-bold;
         padding-bottom: 46px;
-        text-align: center;
+        font-size: 14px;
+        padding-left: 33px;
         & a {
             font-family: $text-font-bold;
+            font-size: 14px;
             text-decoration: none;
             color: red;
         }
