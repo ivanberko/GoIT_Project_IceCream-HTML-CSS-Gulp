@@ -185,5 +185,37 @@
     display: block;
     text-align: center;
     margin: 0;
+
+    .button--red-locations {
+      padding: sizeRem(18) sizeRem(36);
+      font-size: sizeRem(15);
+      font-weight: 700;
+
+      &::after {
+        @extend %after-chevron-white;
+        margin-left: sizeRem(18);
+      }
+
+      @media (max-width: 767px) {
+        font-size: sizeRem(14);
+        margin-right: 0;
+        margin-bottom: sizeRem(14);
+      }
+    }
+
+    .button--white-locations {
+      padding: sizeRem(18) sizeRem(42);
+      font-size: sizeRem(15);
+      font-weight: 700;
+
+      &::after {
+        @extend %after-chevron-red;
+        margin-left: sizeRem(18);
+      }
+
+      @media (max-width: 767px) {
+        font-size: sizeRem(14);
+      }
+    }
   }
 }
