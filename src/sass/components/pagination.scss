@@ -1,11 +1,6 @@
 .pagination {
   display: flex;
   justify-content: center;
-  margin-bottom: sizeRem(120);
-
-  @media (max-width: 767px) {
-    margin-bottom: sizeRem(90);
-  }
 }
 
 .pagination__dot input[type='radio'] {
