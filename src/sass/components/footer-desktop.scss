@@ -1,23 +1,36 @@
-@media screen and (min-width:1280px) {
-    .footer {
-        width: 1280px;
-        &-titles {
-            
-            width: 45%;
-            &__main-title {
-                font-size: 30px;
-                font-weight: 400;
-                line-height: 33px;
-            }
-            &__sub-title {
-                padding-top: 30px;
-                font-size: 60px;
-                line-height: 49px;
-            }
-        }
-        &-contacts {
-            padding-top: 100px;
-            width: 45%;
-        }
+@media screen and (min-width: 1280px) {
+  .footer {
+    width: 100%;
+    padding: 0 sizeRem(110);
+
+    &-titles {
+      width: 50%;
+
+      &__main-title {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 33px;
+      }
+
+      &__sub-title {
+        padding-top: 30px;
+        font-size: 60px;
+        line-height: 49px;
+      }
     }
+
+    &-contacts {
+      width: 50%;
+      padding: 0;
+
+      &__contact-number {
+        font-size: sizeRem(17);
+      }
+    }
+  }
+
+  .footer-copyright__text {
+    font-size: sizeRem(15);
+    padding: sizeRem(15) 0;
+  }
 }

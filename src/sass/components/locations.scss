@@ -118,7 +118,7 @@
 
   &__desc {
     color: $text-color-grey;
-    margin-bottom: sizeRem(36);
+    margin-bottom: sizeRem(34);
     line-height: 28px;
 
     @media (max-width: 767px) {
@@ -127,10 +127,10 @@
   }
 
   &__operating {
-    padding: sizeRem(38) 0;
+    padding: sizeRem(34) 0;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    margin-bottom: sizeRem(36);
+    margin-bottom: sizeRem(34);
 
     p:nth-of-type(2) {
       margin-bottom: sizeRem(30);

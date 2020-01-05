@@ -3,11 +3,16 @@
     max-width: 1220px;
     width: 100%;
     margin: 0 auto;
-    padding-bottom: sizeRem(342);
-    position: relative;
+    margin-bottom: sizeRem(140);
+
+    &__pictures {
+      margin: 0 auto;
+      margin-bottom: sizeRem(122);
+    }
 
     &__main-title {
       font-size: 30px;
+      margin-bottom: sizeRem(120);
     }
 
     &__sub-title {
@@ -15,82 +20,67 @@
       margin-bottom: 0;
     }
 
+    &__cow-container-information {
+      width: 50%;
+      padding-right: 140px;
+    }
+
     &__title {
-      box-sizing: content-box;
-      padding: sizeRem(142) sizeRem(47) 0 sizeRem(48);
-      max-width: sizeRem(460);
       font-size: 17px;
       letter-spacing: 0.17px;
       line-height: 28px;
     }
 
     &__text {
-      box-sizing: content-box;
-      padding: sizeRem(39) sizeRem(47) 0 sizeRem(48);
-      max-width: sizeRem(460);
       font-size: 17px;
       line-height: 28px;
       letter-spacing: 0.17px;
 
       &:nth-last-child(2n) {
-        box-sizing: content-box;
-        margin-right: 0;
-        padding: sizeRem(42) sizeRem(47) 0 sizeRem(48);
         font-size: 17px;
       }
     }
 
     &-icecream {
       display: flex;
+      padding-left: sizeRem(108);
+      padding-right: sizeRem(190);
 
-      &__type img {
-        padding-top: sizeRem(63);
+      &__type {
+        min-width: 268px;
+
+        & img {
+          margin-bottom: sizeRem(50);
+        }
+
+        & h2 {
+          font-size: 60px;
+          margin-bottom: sizeRem(30);
+        }
+
+        & p {
+          font-size: 17px;
+        }
       }
-
-      &__type h2 {
-        padding-top: sizeRem(51);
-        font-size: 60px;
-      }
-
-      &__type p {
-        padding-top: sizeRem(31);
-        font-size: 17px;
-      }
-    }
-
-    &__button {
-      position: absolute;
-      top: sizeRem(664);
-      left: sizeRem(252);
     }
 
     &__cow-container {
       background-image: url(../../images/sectionbg1.png);
       background-repeat: no-repeat;
       background-size: contain;
-      padding-bottom: sizeRem(90);
+      background-position-y: 0;
+      padding-bottom: 0;
 
-      &-picture {
-        margin-left: sizeRem(118);
-        margin-top: sizeRem(92);
-        & img {
-          margin: 0 auto;
-          width: 511px;
-          height: 422px;
-        }
+      &-picture img {
+        margin: 0 auto;
+        width: 511px;
+        height: auto;
       }
     }
+  }
 
-    &__cow-container {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__pictures {
-      position: absolute;
-      width: 1281px;
-      height: 431px;
-      bottom: -260px;
-    }
+  &__cow-container {
+    display: flex;
+    justify-content: space-between;
   }
 }

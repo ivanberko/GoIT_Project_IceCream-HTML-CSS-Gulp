@@ -1,27 +1,40 @@
-@media screen and (min-width:768px) {
-    .footer {
-        width: 768px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        &-titles {
-            
-            width: 45%;
-            &__main-title {
-                font-size: 26px;
-                font-weight: 400;
-                line-height: 33px;
-            }
-            &__sub-title {
-                padding-top: 30px;
-                font-size: 51px;
-                line-height: 49px;
-            }
-        }
-        &-contacts {
-            padding-top: 100px;
-            width: 45%;
-        }
-        
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-titles {
+      width: 50%;
+      margin-bottom: sizeRem(100);
+
+      &__main-title {
+        width: 100%;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 33px;
+        padding-right: 0;
+        margin-bottom: 0;
+      }
+
+      &__sub-title {
+        padding-top: 30px;
+        font-size: 51px;
+        line-height: 49px;
+      }
     }
+
+    &-contacts {
+      width: 50%;
+      padding-right: sizeRem(40);
+
+
+      &__contact-number {
+        text-align: right;
+        margin-bottom: 0;
+        font-size: sizeRem(14);
+      }
+    }
+  }
 }

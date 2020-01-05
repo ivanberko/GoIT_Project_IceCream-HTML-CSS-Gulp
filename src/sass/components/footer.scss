@@ -1,47 +1,110 @@
 .footer {
+  width: 100%;
+  margin: 0 auto;
+
+  &-titles__main-title {
     width: 320px;
-    margin: 0 auto;
-    
-    &-titles__main-title {
-        padding-right: 33px;
-        display: block;
-        @extend %subtitle;
-        font-size: 18px;
-        line-height: 20px;
-    }
-    &-titles__sub-title {
-        padding-right: 33px;
-        display: block;
-        @extend %title;
-        font-size: 36px;
-        line-height: 32px;
+    padding-right: 33px;
+    display: block;
+    @extend %subtitle;
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: sizeRem(32);
+  }
+
+  &-titles__sub-title {
+    display: block;
+    @extend %title;
+    font-size: 36px;
+    line-height: 32px;
+    padding-top: sizeRem(28);
+  }
+
+  &-contacts {
+    width: 320px;
+    padding-right: sizeRem(32);
+  }
+
+  &__socila-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: sizeRem(50);
+
+    &-facebook {
+      margin-left: sizeRem(26);
+      background: $text-color-pink;
+      border: 6px solid $text-color-pink;
+      border-radius: 50%;
+      fill: $main-color-white;
+      width: 33px;
+      height: 33px;
+
+      &:hover {
+        background-color: $hover-color-red;
+        border: 6px solid $hover-color-red;
+        cursor: pointer;
+        transition: all .3s linear;
+      }
     }
 
-    &-contacts__contact-number {
-        font-family: $text-font-bold;
-        padding-bottom: 46px;
-        text-align: center;
-        & a {
-            font-family: $text-font-bold;
-            text-decoration: none;
-            color: red;
-        }
+    &-github {
+      background: $text-color-pink;
+      border: 6px solid $text-color-pink;
+      border-radius: 50%;
+      fill: white;
+      width: 33px;
+      height: 33px;
+
+      &:hover {
+        background: $hover-color-red;
+        border: 6px solid $hover-color-red;
+        cursor: pointer;
+        transition: all .3s linear;
+      }
     }
-    &-copyright {
-        width: 100%;
-        &__text {
-            text-align: center;
-            color: #b3a0a4;
-            font-family: $text-font-regular;
-            padding-bottom: 26px;
-            &::before {
-                padding-bottom: 26px;
-                display: block;
-                width: 100%;
-                content: "";
-                border-top: 2px solid #b3a0a4;
-            }
-        }
+
+    &-telegram {
+      margin-left: sizeRem(26);
+      background: $text-color-pink;
+      border: 6px solid $text-color-pink;
+      border-radius: 50%;
+      fill: $main-color-white;
+      width: 33px;
+      height: 33px;
+
+      &:hover {
+        background: $hover-color-red;
+        border: 6px solid $hover-color-red;
+        cursor: pointer;
+        transition: all .3s linear;
+      }
     }
-   
+  }
+
+  &-contacts__contact-number {
+    font-family: $text-font-bold;
+    margin: 0 auto;
+    margin-bottom: sizeRem(40);
+    text-align: right;
+    font-size: sizeRem(13);
+
+    & a {
+      font-family: $text-font-bold;
+      text-decoration: none;
+      color: $main-color-red;
+    }
+  }
+
+  &-copyright {
+    width: 100%;
+
+    &__text {
+      text-align: center;
+      color: #b3a0a4;
+      font-family: $text-font-regular;
+      padding: sizeRem(26) sizeRem(100);
+      font-size: sizeRem(13);
+      border-top: 2px solid #b3a0a4;
+    }
+  }
 }

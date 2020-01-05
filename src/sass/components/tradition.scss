@@ -1,11 +1,10 @@
 .wrapper-fluid {
   width: 100%;
   background-color: #fff5f7;
-  margin-bottom: sizeRem(80);
 }
 
 .tradition-wrapper {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   position: relative;
   margin-bottom: sizeRem(110);
@@ -77,6 +76,7 @@
 
     &:hover {
       background-color: $hover-color-grey;
+      transition: background-color 0.3s linear;
     }
   }
 
@@ -111,10 +111,7 @@
     }
   }
 
-//   &__pictures {
-//     position: absolute;
-//     width: 327px;
-//     height: 110px;
-//     bottom: -66px;
-//   }
+  &__pictures {
+    margin-bottom: sizeRem(80);
+  }
 }
