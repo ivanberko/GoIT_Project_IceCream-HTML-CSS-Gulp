@@ -1,0 +1,40 @@
+@import 'helpers/vars.scss';
+@import 'helpers/placeholders.scss';
+@import 'helpers/typography.scss';
+
+@import 'normalize.scss';
+@import 'base.scss';
+
+
+// HEADER -------------------------------
+
+@import 'components/header.scss';
+@import 'components/site-nav.scss';
+@import 'components/hamburger-menu.scss';
+@import 'components/site-menu.scss';
+@import 'components/button.scss';
+@import 'components/header-inner.scss';
+@import 'components/header-inner__col-left.scss';
+@import 'components/header-inner__col-center.scss';
+
+// TRADITION BLOCK ----------------------
+
+@import 'components/tradition.scss';
+@import 'components/tradition-tablet.scss';
+@import 'components/tradition-desktop.scss';
+@import 'components/header-inner__col-right.scss';
+
+// SECTION PRODUCTS............................
+@import 'components/section-products.scss';
+
+// SECTION TESTIMONIALS............................
+@import 'components/testimonials.scss';
+@import 'components/pagination.scss';
+
+// SECTION LOCATIONS............................
+@import 'components/locations.scss';
+
+//  FOOTER...........................................
+@import 'components/footer.scss';
+@import 'components/footer-tablet.scss';
+@import 'components/footer-desktop.scss';

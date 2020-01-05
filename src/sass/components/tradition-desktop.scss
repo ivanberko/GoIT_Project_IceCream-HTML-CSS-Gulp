@@ -1,0 +1,86 @@
+@media screen and (min-width: 1280px) {
+  .tradition-wrapper {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: sizeRem(140);
+
+    &__pictures {
+      margin: 0 auto;
+      margin-bottom: sizeRem(122);
+    }
+
+    &__main-title {
+      font-size: 30px;
+      margin-bottom: sizeRem(120);
+    }
+
+    &__sub-title {
+      font-size: 60px;
+      margin-bottom: 0;
+    }
+
+    &__cow-container-information {
+      width: 50%;
+      padding-right: 140px;
+    }
+
+    &__title {
+      font-size: 17px;
+      letter-spacing: 0.17px;
+      line-height: 28px;
+    }
+
+    &__text {
+      font-size: 17px;
+      line-height: 28px;
+      letter-spacing: 0.17px;
+
+      &:nth-last-child(2n) {
+        font-size: 17px;
+      }
+    }
+
+    &-icecream {
+      display: flex;
+      padding-left: sizeRem(108);
+      padding-right: sizeRem(190);
+
+      &__type {
+        min-width: 268px;
+
+        & img {
+          margin-bottom: sizeRem(50);
+        }
+
+        & h2 {
+          font-size: 60px;
+          margin-bottom: sizeRem(30);
+        }
+
+        & p {
+          font-size: 17px;
+        }
+      }
+    }
+
+    &__cow-container {
+      background-image: url(../../images/sectionbg1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-y: 0;
+      padding-bottom: 0;
+
+      &-picture img {
+        margin: 0 auto;
+        width: 511px;
+        height: auto;
+      }
+    }
+  }
+
+  &__cow-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

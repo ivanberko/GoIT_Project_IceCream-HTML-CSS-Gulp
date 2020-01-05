@@ -1,0 +1,82 @@
+@media screen and (min-width: 768px) {
+  .tradition-wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: sizeRem(140);
+
+    &__main-title {
+      font-size: 26px;
+      margin-bottom: sizeRem(112);
+    }
+
+    &__sub-title {
+      font-size: 51px;
+      margin-bottom: 0;
+    }
+
+    &__cow-container-information {
+      width: 47%;
+      padding-left: 0;
+      padding-right: sizeRem(48);
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-size: sizeRem(14);
+      line-height: sizeRem(25);
+    }
+
+    &__text {
+      font-size: sizeRem(14);
+      line-height: sizeRem(25);
+
+      &:nth-last-child(2n) {
+        font-size: sizeRem(14);
+        margin-bottom: sizeRem(60);
+      }
+    }
+
+    &-icecream {
+      display: flex;
+      justify-content: space-between;
+      padding-left: sizeRem(30);
+      padding-right: sizeRem(112);
+
+      &__type {
+        max-width: 153px;
+        margin-bottom: 0;
+      }
+    }
+
+    &__cow-container {
+      background-image: url(../../images/sectionbg1.png);
+      background-repeat: no-repeat;
+      background-position-y: 100px;
+      background-size: contain;
+      padding-bottom: sizeRem(60);
+
+      &-picture {
+        width: 50%;
+        margin-bottom: 0;
+        position: relative;
+        bottom: 58px;
+
+        & img {
+          margin: 0 auto;
+          width: 340px;
+          height: auto;
+        }
+      }
+    }
+
+    &__cow-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__pictures {
+      margin-bottom: sizeRem(122);
+    }
+  }
+}

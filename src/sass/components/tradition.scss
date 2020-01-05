@@ -1,0 +1,117 @@
+.wrapper-fluid {
+  width: 100%;
+  background-color: #fff5f7;
+}
+
+.tradition-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: sizeRem(110);
+
+  &__main-title {
+    @extend %subtitle;
+    padding-top: sizeRem(129);
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: sizeRem(62);
+  }
+
+  &__sub-title {
+    @extend %title;
+    padding-top: sizeRem(16);
+    display: block;
+    font-size: 36px;
+    line-height: sizeRem(36);
+  }
+
+  &__cow-container-picture {
+    display: block;
+    margin-bottom: sizeRem(92);
+
+    & img {
+      margin: 0 auto;
+      width: 247px;
+      height: auto;
+    }
+  }
+
+  &__cow-container-information {
+    padding-right: sizeRem(32);
+    padding-left: sizeRem(56);
+    margin-bottom: sizeRem(40);
+  }
+
+  &__title {
+    font-family: $text-font-bold;
+    line-height: sizeRem(19);
+    font-size: 13px;
+    color: $text-color-black;
+    margin-bottom: sizeRem(36);
+  }
+
+  &__text {
+    font-family: $text-font-regular;
+    line-height: sizeRem(19);
+    font-size: sizeRem(13);
+    letter-spacing: 0.13px;
+    color: $text-color-grey;
+    margin-bottom: sizeRem(20);
+    font-weight: 400;
+
+    &:nth-last-child(2n) {
+      margin-bottom: sizeRem(40);
+    }
+  }
+
+  &__button {
+    @extend %btn;
+    background: $main-color-white;
+    padding: sizeRem(14) sizeRem(54) sizeRem(14) sizeRem(31);
+    color: $main-color-red;
+
+    &::after {
+      @extend %after-chevron-red;
+    }
+
+    &:hover {
+      background-color: $hover-color-grey;
+      transition: background-color 0.3s linear;
+    }
+  }
+
+  &-icecream {
+    padding-left: sizeRem(34);
+    padding-right: sizeRem(80);
+
+    &__type {
+      margin-bottom: sizeRem(40);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & img {
+        margin-bottom: sizeRem(12);
+      }
+
+      & h2 {
+        @extend %title;
+        font-size: 36px;
+      }
+
+      & p {
+        font-size: sizeRem(13);
+        font-family: $text-font-bold;
+        font-weight: 700;
+        letter-spacing: 0.13px;
+        line-height: 19px;
+        color: $text-color-black;
+      }
+    }
+  }
+
+  &__pictures {
+    margin-bottom: sizeRem(80);
+  }
+}

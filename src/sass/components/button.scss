@@ -1,0 +1,105 @@
+.button {
+  @extend %btn;
+
+  &--buy {
+    background-color: $main-color-white;
+    color: $main-color-red;
+    padding: sizeRem(15) sizeRem(40);
+    transition: background-color 0.3s linear;
+
+    &::after {
+      @extend %after-chevron-red;
+    }
+
+    &:hover {
+      background-color: $hover-color-grey;
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      padding: sizeRem(15) sizeRem(34);
+    }
+  }
+
+  &--red {
+    font-family: $text-font-regular;
+    font-weight: 400;
+    font-size: sizeRem(13);
+    background-color: $main-color-red;
+    color: $main-color-white;
+    margin-right: sizeRem(10);
+    padding: sizeRem(14) sizeRem(24);
+    transition: background-color 0.3s linear;
+
+    &:hover {
+      background-color: $hover-color-red;
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      padding: sizeRem(8) sizeRem(14);
+      font-size: sizeRem(8);
+      margin-right: sizeRem(6);
+    }
+
+    @media (max-width: 767px) {
+      padding: sizeRem(12) sizeRem(18);
+      font-size: sizeRem(9);
+      margin-right: sizeRem(10);
+    }
+  }
+
+  &--white {
+    font-family: $text-font-regular;
+    font-weight: 400;
+    font-size: sizeRem(13);
+    background-color: $main-color-white;
+    color: $main-color-red;
+    padding: sizeRem(14) sizeRem(24);
+    transition: background-color 0.3s linear;
+
+    &:hover {
+      background-color: $hover-color-grey;
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      padding: sizeRem(8) sizeRem(14);
+      font-size: sizeRem(8);
+    }
+
+    @media (max-width: 767px) {
+      padding: sizeRem(12) sizeRem(18);
+      font-size: sizeRem(9);
+    }
+  }
+
+  &--red--locations {
+    padding: sizeRem(18) sizeRem(36);
+    font-size: sizeRem(15);
+    font-weight: 700;
+
+    &::after {
+      @extend %after-chevron-white;
+      margin-left: sizeRem(18);
+    }
+
+    @media (max-width: 767px) {
+      font-size: sizeRem(14);
+      margin-right: 0;
+      margin-bottom: sizeRem(14);
+    }
+  }
+
+  &--white--locations {
+    padding: sizeRem(18) sizeRem(42);
+    font-size: sizeRem(15);
+    font-weight: 700;
+
+    &::after {
+      @extend %after-chevron-red;
+      margin-left: sizeRem(18);
+    }
+
+    @media (max-width: 767px) {
+      font-size: sizeRem(14);
+    }
+  }
+}

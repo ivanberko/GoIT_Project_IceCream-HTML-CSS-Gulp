@@ -1,0 +1,69 @@
+@function sizeRem($size) {
+  @return $size / $size-content * 1rem;
+}
+
+%btn {
+  font-family: $text-font-bold;
+  font-weight: 700;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border-radius: 25px;
+  font-size: sizeRem(15);
+}
+
+%subtitle {
+  margin: sizeRem(0);
+  color: $main-color-pink;
+  font-family: $title-font;
+  font-weight: normal;
+  line-height: 38px;
+  font-size: sizeRem(30);
+  margin-bottom: sizeRem(30);
+  text-transform: uppercase;
+}
+
+%title {
+  margin: sizeRem(0);
+  color: $main-color-red;
+  font-family: $title-font;
+  font-size: sizeRem(60);
+  letter-spacing: 2.4px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+
+%link {
+  display: block;
+  text-decoration: none;
+}
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+%after-chevron-red {
+  content: "";
+  display: inline-block;
+  margin: 0 auto;
+  width: 6px;
+  height: 8px;
+  background-image: url(../images/icons/chevron-right-red.svg);
+  background-repeat: no-repeat;
+  margin-left: sizeRem(12);
+}
+
+%after-chevron-white {
+  content: "";
+  display: inline-block;
+  margin: 0 auto;
+  width: 6px;
+  height: 8px;
+  background-image: url(../images/icons/chevron-right-white.svg);
+  background-repeat: no-repeat;
+  margin-left: sizeRem(12);
+}
